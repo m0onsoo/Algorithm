@@ -27,7 +27,7 @@ int main() {
 	for (p = x; p < x + n; p++)
 		scanf("%d", p);
 
-	for (i = 0; i < n; i++) {
+	for (i = 0; i < n - 1; i++) {
 		max = findMax(x, n - cnt);
 		swap(max, x + n - cnt - 1);
 		cnt++;
