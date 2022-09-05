@@ -19,15 +19,14 @@ void swap(int *max, int *last) {
 }
 
 int main() {
-	int n, *x, *p, *max, *q, cnt=0, tmp, i;
+	int n, *x, *p, *max, cnt=0, i;
 
 	scanf("%d", &n);
 	x = (int *)malloc(sizeof(int) * n);
 
 	for (p = x; p < x + n; p++)
 		scanf("%d", p);
-	max = x;
-	q = x;
+
 	for (i = 0; i < n; i++) {
 		max = findMax(x, n - cnt);
 		swap(max, x + n - cnt - 1);
