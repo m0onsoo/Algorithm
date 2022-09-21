@@ -72,7 +72,7 @@ void printHeap() {
 }
 
 int main() {
-	int x[100], key, last_index = 0, a[8] = { 0 };
+	int key;
 	char ch;
 	_Heap.n = 0;
 
